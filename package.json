@@ -11,7 +11,8 @@
     "build": "webpack --env.minimize -p --progress",
     "lint": "tslint ./app/**/*.ts -t verbose",
     "lite": "lite-server",
-    "test": "karma start",
+    "testserve": "mocha -t 20000 test/**/*.js",
+    "test": "concurrently \"npm run serve\" \"npm run testserve\"",
     "typings": "typings"
   },
   "keywords": [],
@@ -41,6 +42,7 @@
     "monk": "^3.1.4",
     "reflect-metadata": "0.1.9",
     "rxjs": "5.0.3",
+    "should": "^11.2.0",
     "socket.io": "^1.7.2",
     "zone.js": "0.7.6"
   },

@@ -1,0 +1,7 @@
+{
+  "globalDependencies": {
+    "arcgis-js-api": "github:Esri/jsapi-resources/4.x/typescript/arcgis-js-api.d.ts",
+    "dojo": "registry:dt/dojo#1.9.0+20160521151917",
+    "socket-io-client":"github:DefinitelyTyped/DefinitelyTyped/socket.io-client/socket.io-client.d.ts#7de6c3dd94feaeb21f20054b9f30d5dabc5efabd"
+  }
+}

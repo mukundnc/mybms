@@ -1,0 +1,36 @@
+
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Add Donor</h4>
+        </div>
+        <div class="modal-body">
+            <form (ngSubmit)="onSubmit()" >
+                <div class="form-group">
+                    <label >First Name</label>
+                    <input [(ngModel)]="donor.firstName" name="first" type="text" class="form-control" placeholder="Enter First Name" required />
+                </div>
+                <div class="form-group">
+                    <label >Last Name</label>
+                    <input [(ngModel)]="donor.lastName" name="last" type="text" class="form-control" placeholder="Enter Last Name" required />
+                </div>
+                <div class="form-group">
+                    <label >Email Address</label>
+                    <input [(ngModel)]="donor.email" name="email" type="email" class="form-control" placeholder="Enter Email" required />
+                </div>
+                <div class="form-group">
+                    <label>Contact number</label>
+                    <input [(ngModel)]="donor.phone" name="phone" type="text" pattern="\+[1-9]{3}[0-9]{9}|00[1-9]{3}[0-9]{9}" class="form-control" placeholder="Enter Contact Number" required />
+                </div>
+                <div class="form-group">
+                    <label>Blood Group</label>
+                    <input [(ngModel)]="donor.bloodgroup" name="blood" type="text" class="form-control" placeholder="Blood Group" required />
+                </div>       
+                <p>         
+                    <button type="submit" class="btn btn-primary">Edit Me</button>
+                    <button type="button" class="btn btn-danger" (click)="onDelete()">Remove Me</button>
+                </p>        
+            </form>    
+        </div>
+    </div>
+</div>

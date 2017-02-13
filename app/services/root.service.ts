@@ -7,7 +7,7 @@ import * as io from 'socket.io-client';
 @Injectable()
 export class RootService {
   private _ipaddress: string;
-  private socket = io('https://localhost:3001');
+  private socket = io(window.location.origin);
   
   constructor(private http: Http) {       
         // this.socket = io('https://localhost:3001');

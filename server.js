@@ -21,8 +21,8 @@ var db = monk(config.dbConnectionString);
 app.use(function*(next) {
     this.db = db;
     this.type = 'application/json';
-    yield next;
     console.log('%s - %s', this.method, this.url);
+    yield next;
 });
 
 app.use(function *(next){

@@ -1,5 +1,7 @@
 
-module.exports.port = 3000;
+module.exports.port = 80;
+
+module.exports.securePort = 443;
 
 module.exports.dbConnectionString = "localhost/angular2"
 

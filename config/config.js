@@ -13,9 +13,6 @@ module.exports.corsOptions = {
     // maxAge : '',
 }
 
-
-module.exports.securePort = 3001;
-
 module.exports.ssl = {
 	keyPath: 'key.pem',
 	certPath: 'key-cert.pem'

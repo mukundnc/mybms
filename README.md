@@ -24,3 +24,4 @@ Click [here](https://localhost:3001) to see the application running
 ```
 npm test
 ```
+Click [here](https://ec2-52-38-69-12.us-west-2.compute.amazonaws.com) to see the demo application
